@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form
+      action="http://localhost:8000/submit"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <label>First Name: <input type="text" name="fname" required /></label
+      ><br />
+      <label>Last Name: <input type="text" name="lname" required /></label
+      ><br />
+      <label>Email: <input type="email" name="email" required /></label><br />
+      <label>Password: <input type="password" name="password" required /></label
+      ><br />
+      <label
+        >Confirm Password:
+        <input type="password" name="confirm_password" required /></label
+      ><br />
+      <label
+        >Sports:
+        <select name="sports">
+          <option value="football">Football</option>
+          <option value="cricket">Cricket</option>
+          <option value="basketball">Basketball</option>
+        </select> </label
+      ><br />
+      <label>Gender:</label>
+      <label><input type="radio" name="gender" value="male" /> Male</label>
+      <label><input type="radio" name="gender" value="female" /> Female</label
+      ><br />
+      <label>Hobbies:</label>
+      <label
+        ><input type="checkbox" name="hobbies" value="reading" /> Reading</label
+      >
+      <label
+        ><input type="checkbox" name="hobbies" value="traveling" />
+        Traveling</label
+      >
+      <label
+        ><input type="checkbox" name="hobbies" value="sports" /> Sports</label
+      ><br />
+
+      <label
+        >Message:<br />
+        <textarea name="message" rows="5" cols="40"></textarea></label
+      ><br />
+
+      <label
+        >Upload Image:
+        <input
+          type="file"
+          name="image"
+          accept="image/*"
+          required
+          multiple /></label
+      ><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
